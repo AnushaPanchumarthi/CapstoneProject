@@ -38,6 +38,14 @@ def create_app(test_config=None):
         )
         return response
 
+    @app.route('/')
+    def get_greeting():
+        excited = os.environ['EXCITED']
+        greeting = "Hello" 
+        if excited == 'true': 
+            greeting = greeting + "!!!!! Welcome to the Capstone Project"
+        return greeting
+
     @app.route("/movies",methods=['GET'])
     @requires_auth('get:movies')
     def retrieve_movies(payload):
@@ -102,7 +110,7 @@ def create_app(test_config=None):
             abort(422)
         newactor.update()
         return jsonify({'success': True, 
-                    'movies': new_actors_list},
+                    'actors': new_actors_list},
                     200)
 
     @app.route('/actors/<int:id>', methods = ['PATCH'])
