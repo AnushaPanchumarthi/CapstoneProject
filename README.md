@@ -14,8 +14,6 @@ This app is fully functional and is capable of doing the following, using a Post
 * Delete new movies and actors.
 * Update actors and movies information.
 
-We want Fyyur to be the next new platform that artists and musical venues can use to find each other, and discover new music shows. Let's make that happen!
-
 ## Tech Stack (Dependencies)
 
 ### 1. Backend Dependencies
