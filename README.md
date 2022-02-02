@@ -119,7 +119,7 @@ able to retrieve ,add and modify movies and actors.Permitted to delete actors an
    - Register 3 users - assign the CastingAgency role and CastingDirector and CastingProducer role to the other.
    - Sign into each account and make note of the JWT.
    - Import the postman collection `Capstone.postman_collection`
-   - Right-clicking the collection folder for barista and manager, navigate to the authorization tab, and including the JWT in the token field (you should have noted these JWTs).
+   - Right-clicking the collection folder for any of the CastingAgency,CastingDirector, and CastingProducer then navigate to the authorization tab, and including the JWT in the token field (you should have noted these JWTs).
    - Run the collection and correct any errors.  
 
 ### Deployment configuration
