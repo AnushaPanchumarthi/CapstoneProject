@@ -122,22 +122,22 @@ Heroku platfrom enables to configure Environment variables in GUI
 2.*GET '/movies'*
   - This endpoint retrieves and provides the list of entire movies and informaiton of the releasedates.
  
-3.*POST 'actors'*
+3.*POST '/actors'*
   - This endpoint allows to insert new actor into the database and returns new list.
  
-4.*POST 'movies'*
+4.*POST '/movies'*
   -  This endpoint allows to insert new movie into the database and returns new list.
 
-5.*PATCH 'actors'*
+5.*PATCH '/actors'*
   - This endpoint allows to update existing actor into the database and returns updated actor.
 
-6.*PATCH 'movies'*
+6.*PATCH '/movies'*
   - This endpoint allows to update existing movie into the database and returns updated movie.
   
-7.*DELETE 'actors'*
+7.*DELETE '/actors'*
   -  This endpoint allows to delete existing actor in the database.
  
-8.*DELETE 'movies'*
+8.*DELETE '/movies'*
   -  This endpoint allows to delete existing movie in the database.
 
 ### Testing the Application
