@@ -17,7 +17,7 @@ This app is fully functional and is capable of doing the following, using a Post
 ## Tech Stack (Dependencies)
 
 ### 1. Backend Dependencies
-Our tech stack will include the following:
+Tech stack will include the following:
  * **virtualenv** as a tool to create isolated Python environments
  * **SQLAlchemy ORM** to be our ORM library of choice
  * **PostgreSQL** as our database of choice
