@@ -116,21 +116,21 @@ Heroku platfrom enables to configure Environment variables in GUI
 
 ### Endpoints Description
 GET '/actors' 
-    This endpoint retrieves and provides the list of entire actors and their informaiton about age,gender and name.
+  - This endpoint retrieves and provides the list of entire actors and their informaiton about age,gender and name.
 GET '/movies'
-    This endpoint retrieves and provides the list of entire movies and informaiton of the releasedates.
+  - This endpoint retrieves and provides the list of entire movies and informaiton of the releasedates.
 POST 'actors'
-    This endpoint allows to insert new actor into the database and returns new list.
+  - This endpoint allows to insert new actor into the database and returns new list.
 POST 'movies'
-    This endpoint allows to insert new movie into the database and returns new list.
+  -  This endpoint allows to insert new movie into the database and returns new list.
 PATCH 'actors'
-    This endpoint allows to update existing actor into the database and returns updated actor.
+  - This endpoint allows to update existing actor into the database and returns updated actor.
 PATCH 'movies'
-    This endpoint allows to update existing movie into the database and returns updated movie.
+  - This endpoint allows to update existing movie into the database and returns updated movie.
 DELETE 'actors'
-    This endpoint allows to delete existing actor in the database.
+  -  This endpoint allows to delete existing actor in the database.
 DELETE 'movies'
-    This endpoint allows to delete existing movie in the database.
+  -  This endpoint allows to delete existing movie in the database.
 
 ### Testing the Application
 Application is hosted on Heroku platform.It is live and running at
