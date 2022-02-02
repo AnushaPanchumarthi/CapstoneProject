@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "c89aa730-70f6-4c87-8a96-e289250cc446",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public",
+			"item": [
+				{
+					"name": "movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actors",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/actors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CastingDirectorNeena",
+			"item": [
+				{
+					"name": "Movies",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "actors",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ACTOR",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imx4ZkpRbks5YnNoOTRwTlg3aUlvQiJ9.eyJpc3MiOiJodHRwczovL2RldjAxLWF1dGgtZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjFmM2JlMmYzMWE1N2YwMDY4ZTM5NDRmIiwiYXVkIjoiQ2Fwc3RvbmVQcm9qMjAyMiIsImlhdCI6MTY0MzM2NTQ2NiwiZXhwIjoxNjQzMzcyNjY2LCJhenAiOiJmU0xMQTRNVDZaRjZrb3dGUkV0b1lDQlJTc3pYYjlvbCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiXX0.aaWjbnElcuEThHUHexcaDBBet--i_MftOtJntqxSVFvigBD9H4XwRHN9GiynU8mJHDzbJpMca0wNnBE50gyk24Hsjvh2PHS1VLzSiM4Mlp9Z7fqUJ3NaIISodgOiGVp5F62g8moMeE45wnDQR8Ev1FVslyTN9WJycsdjB2bdqsIU0C8XOtQGYUPtiWKHr9jN1EGTOTy2w7-WlarsgkGLSQ9PZ5rUqtYVnFE7iatQxbM-29SY17xnRlDP9Sjv0bAebB3qj7PvQ4DI3auRq-n1uGiRIK99Xnfp8lxoTRJBjLRTRVNDzL6QvwzZbecWS6XgvX5pe0cDxBc8h9p5aiSvHg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/actors/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Movie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imx4ZkpRbks5YnNoOTRwTlg3aUlvQiJ9.eyJpc3MiOiJodHRwczovL2RldjAxLWF1dGgtZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjFmM2JlMmYzMWE1N2YwMDY4ZTM5NDRmIiwiYXVkIjoiQ2Fwc3RvbmVQcm9qMjAyMiIsImlhdCI6MTY0MzM2NTQ2NiwiZXhwIjoxNjQzMzcyNjY2LCJhenAiOiJmU0xMQTRNVDZaRjZrb3dGUkV0b1lDQlJTc3pYYjlvbCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiXX0.aaWjbnElcuEThHUHexcaDBBet--i_MftOtJntqxSVFvigBD9H4XwRHN9GiynU8mJHDzbJpMca0wNnBE50gyk24Hsjvh2PHS1VLzSiM4Mlp9Z7fqUJ3NaIISodgOiGVp5F62g8moMeE45wnDQR8Ev1FVslyTN9WJycsdjB2bdqsIU0C8XOtQGYUPtiWKHr9jN1EGTOTy2w7-WlarsgkGLSQ9PZ5rUqtYVnFE7iatQxbM-29SY17xnRlDP9Sjv0bAebB3qj7PvQ4DI3auRq-n1uGiRIK99Xnfp8lxoTRJBjLRTRVNDzL6QvwzZbecWS6XgvX5pe0cDxBc8h9p5aiSvHg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD ACTOR",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ADD MOVIE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Magnificient Country\",\r\n    \"releasedate\":\"2020-02-02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE ACTOR",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/actors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MOVIE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imx4ZkpRbks5YnNoOTRwTlg3aUlvQiJ9.eyJpc3MiOiJodHRwczovL2RldjAxLWF1dGgtZnNuZC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjFmM2JlMmYzMWE1N2YwMDY4ZTM5NDRmIiwiYXVkIjoiQ2Fwc3RvbmVQcm9qMjAyMiIsImlhdCI6MTY0MzQ1MjUxNSwiZXhwIjoxNjQzNDU5NzE1LCJhenAiOiJmU0xMQTRNVDZaRjZrb3dGUkV0b1lDQlJTc3pYYjlvbCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImdldDphY3RvcnMiLCJnZXQ6bW92aWVzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiXX0.HYPx76kdwEsjg22qRJU_8UocuD38L6L_HGFQ_FfH-u0xfTQkBZYYqML2_98zg7xZOHUzVoFO_V6Eat_99MSX7nB60SGMcmdZ3Sru3iD4Ha5rI_D1iuFf5VqrpyTal8byNuhucYyH5S3lhlsG_poHNhJO3AWNJdL6dwyikTRMI7IX_6B7FKUOrWJN0tClupJWjGwjVAFfVBcpMp7hoXZ4BFHz1iCsyn7Pbfs-LoKmC0OUs6YazvkdWl29zDN2HuTgUWH0LBXUp5gp7XkCjsxO8hcrqc3t39n9bQ9OlAiCXeFjcBeTIRfrrhsn4piJQ1zs0KFGB43KXpzJimLpp8cISw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Fantasy Family\",\r\n    \"releasedate\":\"2020-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CastingAssistant",
+			"item": [
+				{
+					"name": "Actors",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Movies",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CastingProducer",
+			"item": [
+				{
+					"name": "Actors",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Movies",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ACTOR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/actors/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD MOVIE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/actors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADD ACTOR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"George Tim\",\r\n    \"age\": 30, \r\n    \"gender\": \"Male\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/actors",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE ACTOR",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\": 31\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/actors/12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"actors",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE MOVIE",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Fantasy Family\",\r\n    \"releasedate\":\"2020-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
