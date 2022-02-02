@@ -88,6 +88,7 @@ Capstone operates using three roles
   able to retrieve information about movies and actors
    - `get:movies`
    - `get:actors`
+
 2.**Casting Director**
 able to retrieve ,add and modify movies and actors.Permitted to delete and actor.
    - `get:actors`
@@ -97,6 +98,7 @@ able to retrieve ,add and modify movies and actors.Permitted to delete and actor
    - `patch:actors`
    - `patch:movies`
    - `delete:actors`
+
 3.**Casting Producer**
 able to retrieve ,add and modify movies and actors.Permitted to delete actors and movies.
    - `get:actors`
@@ -117,19 +119,26 @@ Heroku platfrom enables to configure Environment variables in GUI
 ### Endpoints Description
 1.*GET '/actors'*
   - This endpoint retrieves and provides the list of entire actors and their informaiton about age,gender and name.
-2.GET '/movies'
+
+2.*GET '/movies'*
   - This endpoint retrieves and provides the list of entire movies and informaiton of the releasedates.
-3.POST 'actors'
+ 
+3.*POST 'actors'*
   - This endpoint allows to insert new actor into the database and returns new list.
-4.POST 'movies'
+ 
+4.*POST 'movies'*
   -  This endpoint allows to insert new movie into the database and returns new list.
-5.PATCH 'actors'
+
+5.*PATCH 'actors'*
   - This endpoint allows to update existing actor into the database and returns updated actor.
-6.PATCH 'movies'
+
+6.*PATCH 'movies'*
   - This endpoint allows to update existing movie into the database and returns updated movie.
-7.DELETE 'actors'
+  
+7.*DELETE 'actors'*
   -  This endpoint allows to delete existing actor in the database.
-8.DELETE 'movies'
+ 
+8.*DELETE 'movies'*
   -  This endpoint allows to delete existing movie in the database.
 
 ### Testing the Application
