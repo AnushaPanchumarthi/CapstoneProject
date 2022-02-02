@@ -82,13 +82,20 @@ flask run --reload
 
 The `--reload` flag will detect file changes and restart the server automatically.
 ### Setup Auth0
+1. Create a new Auth0 Account
+2. Select a unique tenant domain
+3. Create a new, single page web application
+4. Create a new API
+   - in API Settings:
+     - Enable RBAC
+     - Enable Add Permissions in the Access Token
 Capstone operates using three roles 
-1.**CastingAgency**
+5. **CastingAgency**
   able to retrieve information about movies and actors
    - `get:movies`
    - `get:actors`
 
-2.**Casting Director**
+6. **Casting Director**
 able to retrieve ,add and modify movies and actors.Permitted to delete and actor.
    - `get:actors`
    - `get:movies`
@@ -98,7 +105,7 @@ able to retrieve ,add and modify movies and actors.Permitted to delete and actor
    - `patch:movies`
    - `delete:actors`
 
-3.**Casting Producer**
+7. **Casting Producer**
 able to retrieve ,add and modify movies and actors.Permitted to delete actors and movies.
    - `get:actors`
    - `get:movies`
@@ -108,6 +115,12 @@ able to retrieve ,add and modify movies and actors.Permitted to delete actors an
    - `patch:movies`
    - `delete:actors`
    - `delete:movies`
+7. Test your endpoints with [Postman](https://getpostman.com).
+   - Register 3 users - assign the CastingAgency role and CastingDirector and CastingProducer role to the other.
+   - Sign into each account and make note of the JWT.
+   - Import the postman collection `Capstone.postman_collection`
+   - Right-clicking the collection folder for barista and manager, navigate to the authorization tab, and including the JWT in the token field (you should have noted these JWTs).
+   - Run the collection and correct any errors.  
 
 ### Deployment configuration
 Application is hosted on Heroku platform.
