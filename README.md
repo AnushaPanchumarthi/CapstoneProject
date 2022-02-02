@@ -84,11 +84,11 @@ flask run --reload
 The `--reload` flag will detect file changes and restart the server automatically.
 ### Setup Auth0
 Capstone operates using three roles 
-1.CastingAgency 
+1.**CastingAgency**
   able to retrieve information about movies and actors
    - `get:movies`
    - `get:actors`
-2.Casting Director
+2.**Casting Director**
 able to retrieve ,add and modify movies and actors.Permitted to delete and actor.
    - `get:actors`
    - `get:movies`
@@ -97,9 +97,9 @@ able to retrieve ,add and modify movies and actors.Permitted to delete and actor
    - `patch:actors`
    - `patch:movies`
    - `delete:actors`
-3.Casting Producer
+3.**Casting Producer**
 able to retrieve ,add and modify movies and actors.Permitted to delete actors and movies.
-    - `get:actors`
+   - `get:actors`
    - `get:movies`
    - `post:actors`
    - `post:movies`
@@ -115,7 +115,7 @@ Heroku platfrom enables to configure Environment variables in GUI
 
 
 ### Endpoints Description
-1.GET '/actors' 
+1.*GET '/actors'*
   - This endpoint retrieves and provides the list of entire actors and their informaiton about age,gender and name.
 2.GET '/movies'
   - This endpoint retrieves and provides the list of entire movies and informaiton of the releasedates.
