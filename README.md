@@ -71,8 +71,9 @@ export FLASK_APP=api.py;
 All the Environment variables are mentioned in the file setup.sh to run locally.
 execute
 # You should have setup.sh  available
-chmod +x setup.sh
-source setup.sh
+*chmod +x setup.sh*
+
+*source setup.sh*
 
 To run the server, execute:
 ```bash
