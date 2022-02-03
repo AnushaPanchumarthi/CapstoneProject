@@ -106,7 +106,7 @@ def create_app(test_config=None):
        # get the body
         req = request.get_json()
 
-        # get the drink with requested Id
+        # get the actor with requested Id
         actor = Actors.query.filter(Actors.id == id).one_or_none()
 
         if not actor:
